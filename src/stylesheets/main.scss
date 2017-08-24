@@ -1,0 +1,28 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './partials/_variables';
+
+body {
+  font-family: $site-font-main;
+}
+
+.table {
+  th,
+  td {
+    font-size: .8rem;
+    padding: 1rem .2rem;
+    text-align: center;
+    width: 5%;
+  }
+
+  .team-name {
+    font-family: $site-font-header;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.empty-td {
+  border-bottom: 0 !important;
+}
