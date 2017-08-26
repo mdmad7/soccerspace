@@ -8,7 +8,7 @@ class Table extends Component {
     });
 
     return (
-      <td className="team-name team-name-short empty-td">
+      <td className="team-name-short empty-td">
         {shortname.code}
       </td>
     );
@@ -29,8 +29,8 @@ class Table extends Component {
           <tr>
             <th>Pos.</th>
             <th />
-            <th className="team-name d-none d-md-block empty-td" />
-            <th className="team-name team-name-short empty-td" />
+            <th className="team-name-long empty-td" />
+            <th className="team-name-short empty-td" />
             <th>P</th>
             <th>W</th>
             <th>D</th>
@@ -58,7 +58,7 @@ class Table extends Component {
                         alt={team.teamName + " crest"}
                       />
                     </td>
-                    <td className="team-name d-none d-md-block">
+                    <td className="team-name-long">
                       {" "}{team.teamName}{" "}
                     </td>
                     {this.renderShortName(team.teamName)}

@@ -5562,12 +5562,17 @@ a.text-dark:focus, a.text-dark:hover {
 .league-table th {
   border: 0; }
 
-.league-table .team-name {
+.league-table .team-name-long,
+.league-table .team-name-short {
   font-family: Quicksand, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
   width: 100%; }
+
+.league-table .team-name-short {
+  display: none;
+  visibility: hidden; }
 
 .league-table .empty-td {
   border-bottom: 0 !important; }
@@ -5581,6 +5586,17 @@ a.text-dark:focus, a.text-dark:hover {
 
 .smaller-table-section .league-table th {
   border: 0; }
+
+.smaller-table-section .league-table .team-name-long {
+  display: none;
+  visibility: hidden; }
+
+.smaller-table-section .league-table .team-name-short {
+  display: block;
+  visibility: visible; }
+
+.smaller-table-section .league-table .team-name-short {
+  text-align: left; }
 
 .smaller-table-section .league-table .empty-td {
   border-bottom: 0 !important; }
@@ -5623,7 +5639,7 @@ a.text-dark:focus, a.text-dark:hover {
       .bigger-matches-section .fixtures-table .matchdate table th {
         font-size: .9rem; } }
   .bigger-matches-section .fixtures-table .matchdate table td {
-    font-size: 1.1rem; }
+    font-size: .95rem; }
     @media screen and (max-width: 767px) {
       .bigger-matches-section .fixtures-table .matchdate table td {
         font-size: .75rem; } }
@@ -5639,8 +5655,8 @@ a.text-dark:focus, a.text-dark:hover {
     width: 50px !important; }
     .bigger-matches-section .fixtures-table .matchdate table .home-team-crest img,
     .bigger-matches-section .fixtures-table .matchdate table .away-team-crest img {
-      height: 40px;
-      width: 40px; }
+      height: 35px;
+      width: 35px; }
     @media screen and (max-width: 767px) {
       .bigger-matches-section .fixtures-table .matchdate table .home-team-crest,
       .bigger-matches-section .fixtures-table .matchdate table .away-team-crest {

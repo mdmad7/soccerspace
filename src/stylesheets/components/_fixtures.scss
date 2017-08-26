@@ -61,7 +61,7 @@
           }
         }
         td {
-          font-size: 1.1rem;
+          font-size: .95rem;
           @media screen and (max-width: 767px) {
             font-size: .75rem;
           }
@@ -77,8 +77,8 @@
         .away-team-crest {
           width: 50px !important;
           img {
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
           }
           @media screen and (max-width: 767px) {
             width: 30px !important;

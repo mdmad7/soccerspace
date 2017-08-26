@@ -10,12 +10,18 @@
   th {
     border: 0;
   }
-  .team-name {
+  .team-name-long,
+  .team-name-short {
     font-family: $site-font-header;
     font-size: 1rem;
     font-weight: bold;
     text-align: left;
     width: 100%;
+  }
+
+  .team-name-short {
+    display: none;
+    visibility: hidden;
   }
 
   .empty-td {
@@ -35,15 +41,19 @@
     th {
       border: 0;
     }
-    // .team-name {
-    //   display: none;
-    //   visibility: hidden;
-    // }
+    .team-name-long {
+      display: none;
+      visibility: hidden;
+    }
 
-    // .team-name-short {
-    //   display: none;
-    //   visibility: hidden;
-    // }
+    .team-name-short {
+      display: block;
+      visibility: visible;
+    }
+
+    .team-name-short {
+      text-align: left;
+    }
 
     .empty-td {
       border-bottom: 0 !important;

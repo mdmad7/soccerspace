@@ -28,6 +28,7 @@ class LeagueFixtures extends Component {
         })
       ),
     ];
+    // eslint-disable-next-line
     let uniqueDate = [];
     return (
       <div className="fixtures-table">
@@ -38,9 +39,14 @@ class LeagueFixtures extends Component {
 
           return (
             <div key={day} className="matchday">
-              <h6>
-                Match Day {day}
-              </h6>
+              <nav className="nav nav-tabs" id="myTab" role="tablist">
+                <a className="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Match Day {day}</a>
+              </nav>
+              <div className="tab-content" id="nav-tabContent">
+                <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                </div>
+              </div>
               {(uniqueDate = [
                 ...new Set(
                   sameMatchDay.map(item => {
