@@ -1,0 +1,52 @@
+.league-table {
+  th,
+  td {
+    font-size: .8rem;
+    padding: 1rem .2rem;
+    text-align: center;
+    width: 5%;
+  }
+
+  th {
+    border: 0;
+  }
+  .team-name {
+    font-family: $site-font-header;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+  }
+
+  .empty-td {
+    border-bottom: 0 !important;
+  }
+}
+
+.smaller-table-section {
+  .league-table {
+    th,
+    td {
+      font-size: .8rem;
+      padding: 1rem .2rem;
+      text-align: center;
+      width: 5%;
+    }
+    th {
+      border: 0;
+    }
+    // .team-name {
+    //   display: none;
+    //   visibility: hidden;
+    // }
+
+    // .team-name-short {
+    //   display: none;
+    //   visibility: hidden;
+    // }
+
+    .empty-td {
+      border-bottom: 0 !important;
+    }
+  }
+}

@@ -5552,22 +5552,145 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-body {
-  font-family: Raleway, sans-serif; }
-
-.table th,
-.table td {
+.league-table th,
+.league-table td {
   font-size: .8rem;
   padding: 1rem .2rem;
   text-align: center;
   width: 5%; }
 
-.table .team-name {
+.league-table th {
+  border: 0; }
+
+.league-table .team-name {
   font-family: Quicksand, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   text-align: left;
   width: 100%; }
 
-.empty-td {
+.league-table .empty-td {
   border-bottom: 0 !important; }
+
+.smaller-table-section .league-table th,
+.smaller-table-section .league-table td {
+  font-size: .8rem;
+  padding: 1rem .2rem;
+  text-align: center;
+  width: 5%; }
+
+.smaller-table-section .league-table th {
+  border: 0; }
+
+.smaller-table-section .league-table .empty-td {
+  border-bottom: 0 !important; }
+
+.fixtures-table .matchday {
+  margin-bottom: 5rem; }
+
+.fixtures-table .matchdate {
+  margin-top: 1.5rem; }
+  .fixtures-table .matchdate table th {
+    border: 0;
+    border-bottom: 1px solid #F0F0F0;
+    font-size: .9rem; }
+  .fixtures-table .matchdate table td {
+    border: 0;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: .8rem 0;
+    width: inherit; }
+  .fixtures-table .matchdate table .home-team,
+  .fixtures-table .matchdate table .away-team {
+    width: 32% !important; }
+  .fixtures-table .matchdate table .home-team-crest,
+  .fixtures-table .matchdate table .away-team-crest {
+    text-align: center;
+    width: 30px !important; }
+  .fixtures-table .matchdate table .scores-or-time {
+    font-size: .8rem;
+    text-align: center; }
+  .fixtures-table .matchdate table .scores-time-span {
+    padding: .4rem; }
+  .fixtures-table .matchdate table .dark-span {
+    background-color: #F0F0F0; }
+
+.bigger-matches-section .fixtures-table .matchdate {
+  margin-top: 1.5rem; }
+  .bigger-matches-section .fixtures-table .matchdate table th {
+    font-size: 1.4rem; }
+    @media screen and (max-width: 767px) {
+      .bigger-matches-section .fixtures-table .matchdate table th {
+        font-size: .9rem; } }
+  .bigger-matches-section .fixtures-table .matchdate table td {
+    font-size: 1.1rem; }
+    @media screen and (max-width: 767px) {
+      .bigger-matches-section .fixtures-table .matchdate table td {
+        font-size: .75rem; } }
+  .bigger-matches-section .fixtures-table .matchdate table .home-team,
+  .bigger-matches-section .fixtures-table .matchdate table .away-team {
+    width: 35% !important; }
+    @media screen and (max-width: 767px) {
+      .bigger-matches-section .fixtures-table .matchdate table .home-team,
+      .bigger-matches-section .fixtures-table .matchdate table .away-team {
+        width: 32% !important; } }
+  .bigger-matches-section .fixtures-table .matchdate table .home-team-crest,
+  .bigger-matches-section .fixtures-table .matchdate table .away-team-crest {
+    width: 50px !important; }
+    .bigger-matches-section .fixtures-table .matchdate table .home-team-crest img,
+    .bigger-matches-section .fixtures-table .matchdate table .away-team-crest img {
+      height: 40px;
+      width: 40px; }
+    @media screen and (max-width: 767px) {
+      .bigger-matches-section .fixtures-table .matchdate table .home-team-crest,
+      .bigger-matches-section .fixtures-table .matchdate table .away-team-crest {
+        width: 30px !important; }
+        .bigger-matches-section .fixtures-table .matchdate table .home-team-crest img,
+        .bigger-matches-section .fixtures-table .matchdate table .away-team-crest img {
+          height: 20px;
+          width: 20px; } }
+  .bigger-matches-section .fixtures-table .matchdate table .scores-or-time {
+    font-size: 1.2rem; }
+    @media screen and (max-width: 767px) {
+      .bigger-matches-section .fixtures-table .matchdate table .scores-or-time {
+        font-size: .8rem; } }
+  .bigger-matches-section .fixtures-table .matchdate table .scores-time-span {
+    padding: .6rem 1rem; }
+    @media screen and (max-width: 767px) {
+      .bigger-matches-section .fixtures-table .matchdate table .scores-time-span {
+        padding: .4rem; } }
+
+.top-nav select {
+  height: 40px;
+  width: 200px; }
+
+body {
+  font-family: Raleway, sans-serif; }
+
+.main {
+  padding-top: 5rem; }
+
+.league-title {
+  padding-bottom: 3rem; }
+  .league-title span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .3rem 0; }
+  .league-title img {
+    height: 40px;
+    margin-right: 1rem;
+    width: 40px; }
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
+.nav-tabs .nav-link {
+  border: 0;
+  color: #2C3136;
+  padding: .5rem 2rem; }
+  .nav-tabs .nav-link.active {
+    border-bottom: 5px solid #C86DD7; }
+
+.tab-pane {
+  padding-top: 4rem; }

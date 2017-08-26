@@ -1,28 +1,49 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import './partials/_variables';
 
+@import './components/_table';
+@import './components/_fixtures';
+@import './components/_navbar';
+
 body {
   font-family: $site-font-main;
 }
 
-.table {
-  th,
-  td {
-    font-size: .8rem;
-    padding: 1rem .2rem;
-    text-align: center;
-    width: 5%;
+.main {
+  padding-top: 5rem;
+}
+
+.league-title {
+  padding-bottom: 3rem; 
+  span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .3rem 0;
   }
 
-  .team-name {
-    font-family: $site-font-header;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: left;
-    width: 100%;
+  img {
+    height: 40px;
+    margin-right: 1rem;
+    width: 40px;
   }
 }
 
-.empty-td {
-  border-bottom: 0 !important;
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nav-tabs {
+  .nav-link {
+    border: 0;
+    color: $site-color-dark;
+    padding: .5rem 2rem;
+    &.active {
+      border-bottom: 5px solid $site-color-primary-two;
+    }
+  }
+}
+
+.tab-pane {
+  padding-top: 4rem;
 }

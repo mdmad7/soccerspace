@@ -8,7 +8,7 @@ class Table extends Component {
     });
 
     return (
-      <td className="team-name d-md-none d-sm-block">
+      <td className="team-name team-name-short empty-td">
         {shortname.code}
       </td>
     );
@@ -24,13 +24,13 @@ class Table extends Component {
       return <p>Loading...</p>
     }
     return (
-      <table className="table table-responsive table-hover">
+      <table className="table table-responsive table-hover league-table">
         <thead>
           <tr>
             <th>Pos.</th>
             <th />
             <th className="team-name d-none d-md-block empty-td" />
-            <th className="team-name d-md-none d-sm-block empty-td" />
+            <th className="team-name team-name-short empty-td" />
             <th>P</th>
             <th>W</th>
             <th>D</th>
@@ -41,7 +41,6 @@ class Table extends Component {
           </tr>
         </thead>
         <tbody>
-          {console.log(this.props)}
           {
             leaguetable.standing.map(team => {
                 let url = team._links.team.href;

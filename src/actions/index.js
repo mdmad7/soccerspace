@@ -1,41 +1,41 @@
 import axios from "axios";
 
-export const fetchLeagueTable = () => {
+export const fetchLeagueTable = league => {
   return {
     type: "FETCH_LEAGUETABLE",
     payload: Promise.resolve(
       axios({
         method: "get",
         baseURL: "http://api.football-data.org/v1/",
-        url: "competitions/445/leagueTable",
+        url: `competitions/${league}/leagueTable`,
         headers: { "X-Auth-Token": "e3d985631e694d80a3db0367fb71dc3c" },
       })
     ),
   };
 };
 
-export const fetchTeam = () => {
+export const fetchTeam = league => {
   return {
     type: "FETCH_TEAM",
     payload: Promise.resolve(
       axios({
         method: "get",
         baseURL: "http://api.football-data.org/v1/",
-        url: `competitions/445/teams`,
+        url: `competitions/${league}/teams`,
         headers: { "X-Auth-Token": "e3d985631e694d80a3db0367fb71dc3c" },
       })
     ),
   };
 };
 
-export const fetchLeagueFixtures = () => {
+export const fetchLeagueFixtures = league => {
   return {
     type: "FETCH_LEAGUE_FIXTURES",
     payload: Promise.resolve(
       axios({
         method: "get",
         baseURL: "http://api.football-data.org/v1/",
-        url: "competitions/445/fixtures",
+        url: `competitions/${league}/fixtures`,
         headers: { "X-Auth-Token": "e3d985631e694d80a3db0367fb71dc3c" },
       })
     ),

@@ -5,7 +5,7 @@ import Home from '../pages/Home'
 
 const Main = () => {
   return (
-    <div className="">
+    <div className="main">
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
