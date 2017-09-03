@@ -6,7 +6,7 @@ export const fetchLeagueTable = league => {
     payload: Promise.resolve(
       axios({
         method: "get",
-        baseURL: "http://api.football-data.org/v1/",
+        baseURL: "https://api.football-data.org/v1/",
         url: `competitions/${league}/leagueTable`,
         headers: { "X-Auth-Token": "e3d985631e694d80a3db0367fb71dc3c" },
       })
@@ -20,7 +20,7 @@ export const fetchTeam = league => {
     payload: Promise.resolve(
       axios({
         method: "get",
-        baseURL: "http://api.football-data.org/v1/",
+        baseURL: "https://api.football-data.org/v1/",
         url: `competitions/${league}/teams`,
         headers: { "X-Auth-Token": "e3d985631e694d80a3db0367fb71dc3c" },
       })
@@ -34,7 +34,7 @@ export const fetchLeagueFixtures = league => {
     payload: Promise.resolve(
       axios({
         method: "get",
-        baseURL: "http://api.football-data.org/v1/",
+        baseURL: "https://api.football-data.org/v1/",
         url: `competitions/${league}/fixtures`,
         headers: { "X-Auth-Token": "e3d985631e694d80a3db0367fb71dc3c" },
       })
